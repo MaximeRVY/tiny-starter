@@ -1,0 +1,78 @@
+{
+  "name": "tiny-stater",
+  "version": "1.0.0",
+  "description": "Tiny Starter",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "repository": "https://github.com/YOUR_GITHUB_USER_NAME/pager-test",
+  "license": "MIT",
+  "keywords": [],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "fix": "run-s fix:*",
+    "fix:prettier": "prettier \"src/**/*.ts\" --write",
+    "fix:lint": "eslint src --ext .ts --fix",
+    "test": "run-s build test:*",
+    "test:lint": "eslint src --ext .ts",
+    "test:prettier": "prettier \"src/**/*.ts\" --list-different",
+    "test:mocha": "mocha -p build/**/*.spec.js",
+    "watch:build": "tsc -p tsconfig.json -w",
+    "watch:test": "gulp --gulpfile ./watch-test.gulpfile.js watch-test"
+  },
+  "engines": {
+    "node": "14.15.4"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@arkweid/lefthook": "^0.7.2",
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.2.0",
+    "@types/node": "^14.14.22",
+    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "@typescript-eslint/parser": "^4.0.1",
+    "chai": "^4.2.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-functional": "^3.0.2",
+    "eslint-plugin-import": "^2.22.0",
+    "gulp": "^4.0.2",
+    "gulp-env": "^0.4.0",
+    "gulp-mocha": "^7.0.2",
+    "mocha": "^8.2.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.1.1",
+    "ts-node": "^9.0.0",
+    "tsc-watch": "^4.2.9",
+    "typescript": "^4.0.2"
+  },
+  "files": [
+    "build",
+    "!**/*.spec.*",
+    "!**/*.json",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "useTabs": false,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "jsxBracketSameLine": false,
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "cursorOffset": -1,
+    "insertPragma": false,
+    "requirePragma": false
+  }
+}
