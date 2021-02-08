@@ -30,6 +30,21 @@
     "console": true
   },
   "rules": {
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "no-useless-escape": "off",
+    "functional/prefer-type-literal": "off",
+    "functional/prefer-readonly-type": "off",
+    "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "eslint-comments/disable-enable-pair": [
       "error",
@@ -41,7 +56,6 @@
     "import/order": [
       "error",
       {
-        "newlines-between": "always",
         "alphabetize": {
           "order": "asc"
         }
