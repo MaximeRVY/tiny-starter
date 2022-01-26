@@ -631,16 +631,17 @@ camelcase@^6.0.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.2.0.tgz#924af881c9d525ac9d87f40d964e5cea982a1809"
   integrity sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
 
-chai@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/chai/-/chai-4.2.0.tgz#760aa72cf20e3795e84b12877ce0e83737aa29e5"
-  integrity sha512-XQU3bhBukrOsQCuwZndwGcCVQHyZi53fQ6Ys1Fym7E4olpIqqZZhhoFJoaKVvV17lWQoXYwgWN2nF5crA8J2jw==
+chai@^4.3.5:
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/chai/-/chai-4.3.5.tgz#784cf398a30cd45b8980181ba1a8c866c225b5df"
+  integrity sha512-0gKhNDL29PUlmwz1CG42p/OaBf1v0YD3oH4//YMS1niT7rLH9tC+lqTgk+SvdbhMLd7ToTtxA61orNBmpSO/DA==
   dependencies:
     assertion-error "^1.1.0"
     check-error "^1.0.2"
     deep-eql "^3.0.1"
     get-func-name "^2.0.0"
-    pathval "^1.1.0"
+    loupe "^2.3.0"
+    pathval "^1.1.1"
     type-detect "^4.0.5"
 
 chalk@4.1.0, chalk@^4.0.0:
@@ -2675,6 +2676,14 @@ longest@^2.0.1:
   resolved "https://registry.yarnpkg.com/longest/-/longest-2.0.1.tgz#781e183296aa94f6d4d916dc335d0d17aefa23f8"
   integrity sha1-eB4YMpaqlPbU2RbcM10NF676I/g=
 
+loupe@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/loupe/-/loupe-2.3.0.tgz#cfae54d12853592e0ec455af490fd6867e26875e"
+  integrity sha512-b6TVXtF01VErh8IxN/MfdiWLQmttrenN98PPGS01kym8kGycJ9tqBXD6D+4sNEDhgE83+H0Mk1cVSl0mD1nNSg==
+  dependencies:
+    get-func-name "^2.0.0"
+    type-detect "^4.0.8"
+
 lru-cache@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-6.0.0.tgz#6d6fe6570ebd96aaf90fcad1dafa3b2566db3a94"
@@ -3361,7 +3370,7 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
-pathval@^1.1.0:
+pathval@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/pathval/-/pathval-1.1.1.tgz#8534e77a77ce7ac5a2512ea21e0fdb8fcf6c3d8d"
   integrity sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==
@@ -4333,7 +4342,7 @@ type-check@^0.4.0, type-check@~0.4.0:
   dependencies:
     prelude-ls "^1.2.1"
 
-type-detect@^4.0.0, type-detect@^4.0.5:
+type-detect@^4.0.0, type-detect@^4.0.5, type-detect@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/type-detect/-/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c"
   integrity sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==
